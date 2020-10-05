@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">        
+    <title>OpenSeadragon + Flickr</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="/lib/normalize.3.0.2.css">
+    <link rel="stylesheet" type="text/css" href="/lib/animate.css">
+    <link rel="stylesheet/less" type="text/css" href="style/main.less">
+    <script src="/lib/jquery-1.11.2.min.js"></script>
+    <script src="/lib/less.2.3.1.min.js"></script>
+    <script src="/lib/spin.2.0.1.min.js"></script>
+    <script src="/lib/underscore.1.7.0.min.js"></script>
+    <script src="/lib/requestanimationframe.js"></script>
+    <script src="/lib/fastclick.js"></script>
+    <script src="../lib/openseadragon/openseadragon.min.js"></script>
+    <script src="../lib/openseadragon-svg-overlay.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
+    <script src="../js/text-item.js"></script>
+    <script src="js/tag.js"></script>
+    <script src="js/photo.js"></script>
+  </head>
+  <body>
+    <div id="openseadragon" class="openseadragon needsclick"></div>
+    <div class="mobile-selected noselect">
+        <div class="tags-button">Explore Tags</div>
+        <div class="attribution"></div>
+    </div>
+    <div class="tag-list-container noselect">
+        <div class="cover"></div>
+        <img class="close-button" src="img/close.svg">
+        <div class="tag-list">
+            <div class="prompt">Select a tag to see more images with that tag.</div>
+            <div class="content"></div>
+        </div>
+    </div>
+    <img class="info-button" src="img/info.svg">
+    <div class="modal">
+        <div class="cover"></div>
+        <div class="content">
+            <h1>OpenSeadragon + Flickr</h1>
+            <p>Made with <a href="http://openseadragon.github.io/" target="_blank">OpenSeadragon</a> and the <a href="https://www.flickr.com/" target="_blank">Flickr</a> API, by <a href="http://iangilman.com/" target="_blank">Ian Gilman</a>.</p>
+            <p>All images belong to their respective creators.</p>
+        </div>
+    </div>
+  </body>
+</html>
